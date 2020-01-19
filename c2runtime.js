@@ -26472,15 +26472,15 @@ cr.behaviors.solid = function(runtime)
 	behaviorProto.acts = new Acts();
 }());
 cr.getObjectRefTable = function () { return [
+	cr.plugins_.Audio,
 	cr.plugins_.Browser,
 	cr.plugins_.Function,
-	cr.plugins_.Text,
+	cr.plugins_.Spritefont2,
 	cr.plugins_.WebStorage,
+	cr.plugins_.Sprite,
 	cr.plugins_.Touch,
 	cr.plugins_.TiledBg,
-	cr.plugins_.Spritefont2,
-	cr.plugins_.Sprite,
-	cr.plugins_.Audio,
+	cr.plugins_.Text,
 	cr.behaviors.lunarray_Tween,
 	cr.behaviors.Platform,
 	cr.behaviors.Flash,
@@ -26526,7 +26526,6 @@ cr.getObjectRefTable = function () { return [
 	cr.plugins_.Sprite.prototype.cnds.IsBoolInstanceVarSet,
 	cr.plugins_.Audio.prototype.acts.Play,
 	cr.plugins_.Audio.prototype.acts.SetPlaybackRate,
-	cr.plugins_.Browser.prototype.acts.GoToURLWindow,
 	cr.plugins_.Sprite.prototype.cnds.IsVisible,
 	cr.plugins_.Touch.prototype.cnds.OnTapGestureObject,
 	cr.plugins_.Spritefont2.prototype.cnds.IsOnLayer,
@@ -26540,6 +26539,7 @@ cr.getObjectRefTable = function () { return [
 	cr.behaviors.Pin.prototype.acts.Pin,
 	cr.behaviors.lunarray_Tween.prototype.acts.SetInitialY,
 	cr.behaviors.lunarray_Tween.prototype.acts.Reverse,
+	cr.plugins_.Browser.prototype.acts.GoToURLWindow,
 	cr.system_object.prototype.acts.SetLayerOpacity,
 	cr.plugins_.Sprite.prototype.cnds.CompareInstanceVar,
 	cr.plugins_.Sprite.prototype.exps.X,
@@ -26565,4 +26565,3 @@ cr.getObjectRefTable = function () { return [
 	cr.plugins_.Touch.prototype.cnds.OnHoldGesture,
 	cr.behaviors.Platform.prototype.cnds.IsFalling
 ];};
-
